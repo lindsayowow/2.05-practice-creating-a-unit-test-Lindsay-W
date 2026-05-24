@@ -5,6 +5,7 @@ public class Student extends Person{
 
     public Student() {
         super("", 6, "");
+        this.studentId = 0;
     }
 
     public Student(String name, int age, int studentId) {
@@ -20,6 +21,14 @@ public class Student extends Person{
 
     public void greet() {
         System.out.println("Hello, my name is " + name + " and I am " + age + " years old. My student ID is " + studentId + ".");
+    }
+
+    public int getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
 }
