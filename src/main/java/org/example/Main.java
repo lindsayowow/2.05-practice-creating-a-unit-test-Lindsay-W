@@ -3,8 +3,6 @@ package org.example;
 import java.util.List;
 import java.util.ArrayList;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         Person person1 = new Person();
@@ -29,18 +27,11 @@ public class Main {
         teacher1.teacherId = 67890;
         teacher1.printInfo();
 
-        Person person3 = new Person("Jack", 32, "108 Laredo Ave.");
-        person3.greet();
-
-        Student student3 = new Student("Mr. Roper", 22, "4 Maid Marion Ct.", 5715);
-        student3.greet();
-
         Teacher teacher2 = new Teacher();
         teacher2.name = "Cindy";
         teacher2.age = 41;
         teacher2.address = "420 Lakeshore Dr.";
         teacher2.teacherId = 58008;
-        teacher2.greet();
 
         Person person4 = new Person("Sheri", 33);
         Student student4 = new Student("Gayle", 23, 54321);
@@ -50,14 +41,6 @@ public class Main {
         people.add(person2);
         people.add(student2);
         people.add(teacher3);
-
-        printGreeting(person4);
-        printGreeting(student4);
-        printGreeting(teacher1);
-
-        for (Person p : people) {
-            p.greet();
-        }
 
         List<Object> stuff = new ArrayList<>();
 
@@ -72,9 +55,5 @@ public class Main {
 
 
     }
-
-    public static void printGreeting(Person p) {
-        p.greet();
-    }
-
 }
+
