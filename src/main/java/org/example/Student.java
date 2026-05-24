@@ -19,10 +19,6 @@ public class Student extends Person{
         this.studentId = studentId;
     }
 
-    public void greet() {
-        System.out.println("Hello, my name is " + name + " and I am " + age + " years old. My student ID is " + studentId + ".");
-    }
-
     public int getStudentId() {
         return studentId;
     }
